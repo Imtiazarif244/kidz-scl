@@ -131,6 +131,7 @@ ul>li>a {
     border-radius: 12px;
     border: none;
     
+    
 }
 
 /* bannar-related-style */
@@ -488,7 +489,7 @@ padding-left: 50px;
     align-content:center ;
     justify-items: center;
     background-color: #05D4DF;
-    border: 1px solid reds;
+    /* border: 1px solid red; */
 }
 .logo-footer{
     margin-right: 90px ;
