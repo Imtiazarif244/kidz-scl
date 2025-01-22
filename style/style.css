@@ -6,6 +6,37 @@
  body{
     border: 2px dashed green;
  } */
+
+.header-walk {
+ position: relative;
+ background-color: turquoise;
+ color: white;
+ padding: 10px;
+ overflow: hidden;
+}
+.marquee {
+ display: inline-block;
+ white-space: nowrap;
+ animation: scroll 10s linear infinite;
+}
+@keyframes scroll {
+ 0% {
+   transform: translateX(100%);
+ }
+ 100% {
+   transform: translateX(-100%);
+ }
+}
+.marquee span {
+ padding: 0 50px;
+ font-size: 1.2rem;
+ color: purple;
+}
+
+
+
+
+
  
 
 
@@ -160,7 +191,7 @@ ul>li>a {
     max-width: 1160px;
     margin: 0 auto;
     background-image: url(../images/bg.png);
-    /* background-repeat: none; */
+    background-repeat: none;
     background-position: center;
 
 
@@ -463,13 +494,29 @@ padding-left: 50px;
 #kids{
     margin-left: 80px;
     margin-top: -60px;
+    font-size: 42px;
+    font-weight: 70px;
 }
 .about{
     margin-right: 90px;
     color: white;
+    font: 27px;
+    font-weight: 700px;
+    margin-top: 30px;
 }
 .keep{
     color: white;
+    margin-top: 40px;
+}
+.footer-description{
+    font-size:  20px;
+    font-weight: 500px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+   
+}
+#logo-1{
+    margin-top: 20px;
 }
 
 
@@ -480,6 +527,9 @@ padding-left: 50px;
 
     .header {
         width: 100%;
+    }
+    body{
+        max-width: 368px;
     }
 
     .section-1 {
@@ -492,6 +542,12 @@ padding-left: 50px;
 
 
     }
+    .arrow-img{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
 
     .section-2 {
         margin-top: 8px;
@@ -500,6 +556,7 @@ padding-left: 50px;
         justify-content: center;
         align-items: center;
         align-content: center;
+
     }
 
     .logo-title,
@@ -520,6 +577,7 @@ padding-left: 50px;
         align-items: center;
         align-content: center;
         justify-content: center;
+        overflow-x: hidden;
 
     }
 
@@ -529,5 +587,53 @@ padding-left: 50px;
 
     .secondary-btn {
         margin-left: 50px;
+ 
     }
+
+    .standard-box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .img-1, .date-1, .story-title, .section-description{
+        display: none;
+    }
+
+
+    .footer-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .our-stories{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+    }
+    .logo-footer{
+       margin-left: 70px;
+
+    }
+    .about{
+        margin-left: 0 auto;
+        font-size: 20px;
+        font-weight: 500px;
+        margin-left: 18px;
+        
+        
+    }
+    .keep{
+       
+        margin-right: 90px;
+        margin-bottom: 80px;
+    }
+    .curriculumn{
+        margin-left: 60px;
+
+    }
+    .view-all-btn{
+        margin-left: 80px;
+    }
+    .section-title{
+
+
+    }
+   
 }
